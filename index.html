@@ -3,93 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Conjunto residencial amali</title>
-
-     <style>
-         body {
-             margin: 0;
-             padding: 0;
-         }
-         .navbar {
-             background-color: #6b7b2b;
-         }
-         .navbar-brand img {
-             height: 70px;
-             width: 180px;
-         }
-         .navbar-nav .nav-link {
-             color: white !important;
-             font-size: 16px;
-             font-weight: bold;
-         }
-         .navbar-nav .dropdown-menu {
-             background-color: #6b7b2b;
-         }
-         .navbar-nav .dropdown-item {
-             color: white !important;
-         }
-         .navbar-nav .dropdown-item:hover {
-             background-color: #5a6a1f;
-         }
-         .social-icons {
-             display: flex;
-             align-items: center;
-         }
-         .social-icons a {
-             color: white;
-             font-size: 20px;
-             margin-left: 10px;
-         }
-     </style>
-  
   </head>
   <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-              <img src="Material Publicidad/LOGOS/LOGO.png" alt="'AMALI Conjunto Residencial'" width="100" height="50">
-          </a>
-          <div class="collapse navbar-collapse justify-content-center">
-              <ul class="navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link" href="index.html">INICIO</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="tipos_de_apto.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Tipos de apto
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="https://app.lapentor.com/sphere/apto-tipo-1" target="_blank">Tipo 1</a></li>
-                          <li><a class="dropdown-item" href="https://app.lapentor.com/sphere/apto-tipo-2" target="_blank">Tipo 2</a></li>
-                          <li><a class="dropdown-item" href="https://app.lapentor.com/sphere/apto-tipo-2a" target="_blank">Tipo 3</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="nosotros.html">Sobre Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="compra_exterior.html">Compra desde el exterior</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="noticias.html">Noticias</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="contacta.html">Contacto</a>
-                  </li>
-              </ul>
-          </div>
-          <div class="social-icons">
-              <a href="https://www.instagram.com/amaliresidencial/"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.facebook.com/people/Amali-Residencial/100090569088759/"><i class="fab fa-facebook"></i></a>
-          </div>
-      </div>
-  </nav>
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-dark"  >
+        <div class="container-fluid">
+          <img src="Material Publicidad/LOGOS/LogoAmaliNegro 1.png" alt="Logo" width="160" height="65" class="d-inline-block align-text-top ms-5">
+  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0" >
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item dropdown" href="tipos_de_apto.html">
+                        <a class="nav-link dropdown-toggle" href="tipos_de_apto.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tipos de Apartamentos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="https://app.lapentor.com/sphere/apto-tipo-1" target="_blank">Apartamento tipo 1</a></li>
+                            <li><a class="dropdown-item" href="https://app.lapentor.com/sphere/apto-tipo-2" target="_blank">Apartamento tipo 2</a></li>
+                            <li><a class="dropdown-item" href="https://app.lapentor.com/sphere/apto-tipo-2a" target="_blank">Apartamento  tipo 2a</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacta.html">Contacta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="compra.html">Compra con nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="noticias.html">Noticias</a>
+                    </li>
+                </ul>
+
+                <div class="social-icons">
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <a href="https://wa.me/573123456789" target="_blank" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    </section>
   </header>
   <body>
-    <secction class="slider-main">
+   <secction class="slider-main">
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -128,12 +104,136 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>   
-        </secction>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     </secction>
+    <section>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBogGzOgQpeKBmBIpJRj7lvx4l5hPb5jF++I5i59V0p4pFFc" crossorigin="anonymous"></script>
+        <div class="container">
+            <!-- Aside (Grid de zonas sociales) -->
+            <aside>
+                <div class="zones-grid">
+                    <!-- Zona 1 -->
+                    <div class="zone-card">
+                        <img src="Material Publicidad/zonas sociales/ParqueInfantil.jpeg" alt="Zona Infantil">
+                        <div class="content">
+                            <h2>Zona Infantil</h2>
+                            <p>Cómodas y amplias zonas verdes para compartir con todos tus amigos y tus seres queridos.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Zona 2 -->
+                    <div class="zone-card">
+                        <img src="Material Publicidad/zonas sociales/Coworking.png" alt="Zona Coworking">
+                        <div class="content">
+                            <h2>Zona Coworking</h2>
+                            <p>Espacios diseñados para el trabajo colaborativo y reuniones.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Zona 3 -->
+                    <div class="zone-card">
+                        <img src="Material Publicidad/zonas sociales/PiscinaAmali.jpeg" alt="Zona Lúdica">
+                        <div class="content">
+                            <h2>Zona Piscina</h2>
+                            <p>Áreas recreativas para todas las edades.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Zona 4 -->
+                    <div class="zone-card">
+                        <img src="Material Publicidad/zonas sociales/BBQ.png" alt="Zona BBQ">
+                        <div class="content">
+                            <h2>Zona BBQ</h2>
+                            <p>Disfruta de un espacio para compartir en compañía de tu familia y amigos.</p>
+                        </div>
+                    </div>
+                    <!-- Zona 5 -->
+                    <div class="zone-card">
+                        <img src="Material Publicidad/Porteria.png" alt="Porteria">
+                        <div class="content">
+                            <h2>Porteria Doblealtura</h2>
+                            <p>Disfruta de un espacio para compartir en compañía de tu familia y amigos.</p>
+                        </div>
+                    </div>
+                    <!-- Zona 6 -->
+                    <div class="zone-card">
+                        <img src="Material Publicidad/12.jpg" alt="Zona BBQ">
+                        <div class="content">
+                            <h2>Zona Parqueaderos</h2>
+                            <p>Disfruta de un espacio para compartir en compañía de tu familia y amigos.</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
 
+            <main>
+                <h1>AMALÍ CONJUNTO RESIDENCIAL</h1>
+                <img src="Material Publicidad/Render Urbano 2.jpg" width="100%" height="auto" display="d-block">
+                <p>
+                    Está ubicado en una zona de alta valorización en el sector de Dosquebradas, Risaralda. 
+                     Tiene acceso a varios puntos de interés como colegios, restaurantes, centros comerciales y vías principales.
+                     A solo 1 minuto del viaducto Cesar Gaviria Trujillo. La Avenida Simon Bolivar te conecta con el transporte 
+                     público de Pereira, permitiendote la movilización por toda la ciudad.  Donde tienes todo a un paso de tu casa,
+                     ubicado en zonas residenciales exclusivas y rodeado de la naturaleza, gracias a  las amplias zonas verdes que 
+                     encuentras dentro de él.
 
-</body>
-</html>
+                </p>
+                <p>
+                    El proyecto cuenta con espacios de 54.16 m2 área construida aprox., 3 habitaciones, 
+                    2 baños con amplias zonas sociales de excelentes e innovadores  diseños arquitectónicos 
+                    como: Salón comunal, Coworking, Piscinas Cubiertas, Zona Gamer, Zona Lúdica, Pet Friendly , 
+                    jardín lineal con senderos y Zona BBQ para que compartas en compañía de tu familia y amigos. 
+                </p>
+            </main>
+        </div>
+    </div>
+    </section>
+    <footer class="bg-dark text-white pt-4 px-2"> 
+        <div class="container-fluid"> 
+            <div class="row justify-content-center"> 
+                <div class="col-12 col-md-4 col-lg-3 mb-4"> 
+                    <h5 class="text-center text-md-start">About Us</h5>
+                    <ul class="list-unstyled text-center text-md-start">
+                        <li><a href="#" class="text-white text-decoration-none">UT Amali</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Conjunto residencial Amali</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">EDOS Pereira</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 mb-4">
+                    <h5 class="text-center text-md-start">Services</h5>
+                    <ul class="list-unstyled text-center text-md-start">
+                        <li><a href="#" class="text-white text-decoration-none">Web Development</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">SEO</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 mb-4">
+                    <h5 class="text-center text-md-start">Contact</h5>
+                    <div class="text-center text-md-start">
+                        <p class="text-white mb-1">Dos Quebradas</p>
+                        <p class="text-white mb-1">Email: UTamali@hotmail.com</p>
+                        <p class="text-white mb-1">Phone: +57 234 567 890</p>
+                    </div>
+
+                    <div class="mt-3 d-flex justify-content-center justify-content-md-start">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-12 text-center pt-3 border-top">
+                    <img src="Material Publicidad/LOGOS/LOGO.png" 
+                         class="img-fluid" 
+                         style="max-width: 250px; width: 100%" 
+                         alt="Logo">
+                    <p class="mb-0 mt-2">&copy; 2025 Juan Jose Aguirre. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
