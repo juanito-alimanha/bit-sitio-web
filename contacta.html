@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+        .left {
+            width: 40%;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .right {
+            width: 40%;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 1em;
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+        p {
+            line-height: 1.5;
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 200px;
+        }
+        .mission, .vision {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .mission img, .vision img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .mission img {
+            border-radius: 10px}
+        .vision img {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <h1>Our Mission</h1>
+            <div class="mission">
+                <img src="mission-image.jpg" alt="Mission Image">
+            </div>
+            <p>To provide the best services to our customers and ensure their satisfaction.</p>
+        </div>
+        <div class="right">
+            <h2>Our Vision</h2>
+            <div class="vision">
+                <img src="vision-image.jpg" alt="Vision Image">
+            </div>
+            <p>To be the leading company in our industry, recognized for our innovation and quality.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -43,38 +43,38 @@ body {
 }
 .container {
     display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    gap: 20px; /* Espacio entre aside y main */
+    background-color: #1c2741;
+    border: #1c2741 200px;
+    max-width: 1100px;
+    margin: 8px;
+    padding: 10px;
+    gap: 20px; 
 }
 
-/* Aside (55% del ancho) */
+
 aside {
-    flex: 0 0 55%; /* Ocupa el 55% del ancho */
+    flex: 0 0 40%; 
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Main (45% del ancho) */
+
 main {
-    flex: 1; /* Ocupa el espacio restante */
+    flex: 1; 
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para el grid de zonas sociales */
 .zones-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
 
-/* Estilos para cada zona */
 .zone-card {
     background-color: #f8f9fa;
     border-radius: 10px;
@@ -90,12 +90,12 @@ main {
 
 .zone-card img {
     width: 100%;
-    height: 150px;
-    object-fit: cover; /* Ajusta la imagen al contenedor */
+    height: 120px;
+    object-fit: cover; 
 }
 
 .zone-card .content {
-    padding: 15px;
+    padding: 325px;
     text-align: center;
 }
 
@@ -110,11 +110,10 @@ main {
     color: #666;
 }
 
-/* Estilos para el texto en el main */
 main h1 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #333;
+    color: white;
 }
 
 main p {
@@ -122,28 +121,31 @@ main p {
     line-height: 1.6;
     color: #555;
 }
+.navbar{
+    background-color: #25d366;
+    height: 110px;
+}
+.nav-item{
+    font-size: 18px;
+}
 .navbar-nav .nav-link {
-    color: white; /* Asegura que el texto sea blanco */
-    position: relative; /* Necesario para el efecto underline */
-    text-decoration: none; /* Elimina el subrayado por defecto */
+    color: white; 
+    position: relative; 
 }
 
-.navbar-nav .nav-link:hover {
-    text-decoration: none; /* Elimina el subrayado por defecto al pasar el mouse */
-}
-
-/* Crea el efecto underline */
 .navbar-nav .nav-link::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -2px; /* Ajusta la posición del subrayado */
+    bottom: -2px; 
     width: 0;
-    height: 2px; /* Grosor del subrayado */
-    background-color: white; /* Color del subrayado */
-    transition: width 0.3s ease; /* Animación suave */
+    height: 2px; 
+    background-color: white; 
+    transition: width 0.3s ease; 
+    text-decoration: none;
 }
 
 .navbar-nav .nav-link:hover::after {
-    width: 100%; /* Ancho completo al pasar el mouse */
+    width: 100%; 
 }
+

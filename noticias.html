@@ -1,85 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/estilos.css"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendedoras - Bootstrap</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <title>Conjunto residencial amali</title>
-  </head>
-  <header>
-    <section>
-      <nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-dark"  >
-        <div class="container-fluid">
-          <img src="Material Publicidad/LOGOS/LogoAmaliNegro 1.png" alt="Logo" width="160" height="65" class="d-inline-block align-text-top ms-5">
-  
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <style>
+        .card-custom {
+            height: 500px; /* Altura fija para todas las cards */
+            margin: 15px;
+            transition: transform 0.3s;
+        }
+        
+        .card-custom:hover {
+            transform: translateY(-5px);
+        }
 
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        .img-container {
+            height: 70%;
+            overflow: hidden;
+            position: relative;
+        }
 
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0" >
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
+        .card-img-top {
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="tipos_de_apto.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Tipos de Apartamentos
+        .card-body-custom {
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1.2rem;
+        }
+
+        .whatsapp-btn {
+            background-color: #25D366 !important;
+            color: white !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #128C7E !important;
+        }
+
+        @media (max-width: 768px) {
+            .card-custom {
+                height: auto;
+                max-width: 400px;
+                margin: 15px auto;
+            }
+            
+            .img-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card-custom shadow-sm">
+                    <div class="img-container">
+                        <img src="vendedora1.jpg" class="card-img-top" alt="Vendedora 1">
+                    </div>
+                    <div class="card-body card-body-custom">
+                        <div>
+                            <h5 class="card-title mb-2">María Pérez</h5>
+                            <p class="card-text text-muted small">Especialista en ventas corporativas</p>
+                        </div>
+                        <a href="https://wa.me/1234567890" 
+                           class="btn whatsapp-btn btn-sm" 
+                           target="_blank">
+                            <i class="bi bi-whatsapp"></i>
+                            Contactar por WhatsApp
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="https://app.lapentor.com/sphere/apto-tipo-1" target="_blank">Apartamento tipo 1</a></li>
-                            <li><a class="dropdown-item" href="https://app.lapentor.com/sphere/apto-tipo-2" target="_blank">Apartamento tipo 2</a></li>
-                            <li><a class="dropdown-item" href="https://app.lapentor.com/sphere/apto-tipo-2a" target="_blank">Apartamento  tipo 2a</a></li>
-                        </ul>
-                    </li>
+                    </div>
+                </div>
+            </div>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacta.html">Contacta</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="compra.html">Compra con nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="noticias.html">Noticias</a>
-                    </li>
-                </ul>
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card-custom shadow-sm">
+                    <div class="img-container">
+                        <img src="vendedora2.jpg" class="card-img-top" alt="Vendedora 2">
+                    </div>
+                    <div class="card-body card-body-custom">
+                        <div>
+                            <h5 class="card-title mb-2">Laura Gómez</h5>
+                            <p class="card-text text-muted small">Asesora comercial senior</p>
+                        </div>
+                        <a href="https://wa.me/1234567890" 
+                           class="btn whatsapp-btn btn-sm" 
+                           target="_blank">
+                            <i class="bi bi-whatsapp"></i>
+                            Contactar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="social-icons">
-                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card-custom shadow-sm">
+                    <div class="img-container">
+                        <img src="vendedora3.jpg" class="card-img-top" alt="Vendedora 3">
+                    </div>
+                    <div class="card-body card-body-custom">
+                        <div>
+                            <h5 class="card-title mb-2">Carlota Ruiz</h5>
+                            <p class="card-text text-muted small">Ejecutiva de ventas premium</p>
+                        </div>
+                        <a href="https://wa.me/1234567890" 
+                           class="btn whatsapp-btn btn-sm" 
+                           target="_blank">
+                            <i class="bi bi-whatsapp"></i>
+                            Contactar por WhatsApp
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </nav>
-    <a href="https://wa.me/573123456789" target="_blank" class="whatsapp-button">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-    </section>
-  </header>
-  <body>
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-      </div>
-      <div class="col-md-5">
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" 
-        xmlns="https://utamali.com/wp-content/uploads/2023/03/360-Apto-Tipo-1-777-scaled.jpg" >
-      </div>
     </div>
 
-    <hr class="featurette-divider">
-
+    <!-- Bootstrap JS + Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-  </html>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</body>
+</html>
