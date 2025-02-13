@@ -3,182 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/estilos.css"/>
+    <link rel="stylesheet" href="css/compra.css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Conjunto residencial amali</title>
-    <style>
-        .navbar{
-        background-color: #25d366;
-        height: 110px;
-        }
-        .nav-item{
-        font-size: 18px;
-        }
-        .navbar-nav .nav-link {
-        color: white; 
-        position: relative; 
-        }
-
-        .navbar-nav .nav-link::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: -2px; 
-        width: 0;
-        height: 2px; 
-        background-color: white; 
-        transition: width 0.3s ease; 
-        text-decoration: none;
-        }
-
-        .navbar-nav .nav-link:hover::after {
-        width: 100%; 
-        }
-        
-        
-        .whatsapp-button {  
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25d366; /* Color de WhatsApp */
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 70px;
-            height: 70px;
-            font-size: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            z-index: 100;
-        }
-
-        .whatsapp-button:hover {
-            background-color: #128c7e; /* Color de WhatsApp más oscuro */
-            animation: vibrate 3s infinite; /* Animación de vibración */
-        }
-        @keyframes vibrate {
-            0% { transform: translateX(0); }
-            10% { transform: translateX(-5px); }
-            20% { transform: translateX(5px); }
-            30% { transform: translateX(-5px); }
-            40% { transform: translateX(5px); }
-            50% { transform: translateX(-5px); }
-            60% { transform: translateX(5px); }
-            70% { transform: translateX(-5px); }
-            80% { transform: translateX(5px); }
-            90% { transform: translateX(-5px); }
-            100% { transform: translateX(0); }
-        }
-        .card-custom {
-            height: 500px; /* Altura fija para todas las cards */
-            margin: 15px;
-            transition: transform 0.3s;
-        }
-        
-        .card-custom:hover {
-            transform: translateY(-5px);
-        }
-
-        .img-container {
-            height: 70%;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .card-img-top {
-            height: 100%;
-            object-fit: cover;
-            object-position: top;
-        }
-
-        .card-body-custom {
-            height: 30%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 1.2rem;
-        }
-
-        .whatsapp-btn {
-            background-color: #25D366 !important;
-            color: white !important;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-        }
-
-        .whatsapp-btn:hover {
-            background-color: #128C7E !important;
-        }
-
-        @media (max-width: 768px) {
-            .card-custom {
-                height: auto;
-                max-width: 400px;
-                margin: 15px auto;
-            }
-            
-            .img-container {
-                height: 300px;
-            }
-        }
-    </style>
   </head>
   <header>
     <section>
-      <nav class="navbar navbar-expand-lg navbar-light navbar-dark "  >
-        <div class="container-fluid">
-          <img src="Material Publicidad/LOGOS/LogoAmaliNegro 1.png" alt="Logo"  height="100px" class="d-inline-block align-text-top ms-5">
-  
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0" >
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link " href="tipos_de_apto.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Tipos de Apartamentos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="tipos_de_apto.html">Tipos de apartamentos</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="https://app.lapentor.com/sphere/apto-tipo-1" target="_blank">Apartamento tipo 1</a></li>
-                            <li><a class="dropdown-item" href="https://app.lapentor.com/sphere/apto-tipo-2" target="_blank">Apartamento tipo 2</a></li>
-                            <li><a class="dropdown-item" href="https://app.lapentor.com/sphere/apto-tipo-2a" target="_blank">Apartamento tipo 2a</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="compra.html">Compra con nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="noticias.html">Noticias</a>
-                    </li>
-                </ul>
-
+        <nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-dark"  >
+            <div class="container-fluid">
                 <div class="social-icons">
                     <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
                 </div>
+              <img src="Material Publicidad/LOGOS/LogoAmaliNegro 1.png" alt="Logo" width="160" height="65" class="d-inline-block align-text-top ms-5">
+      
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse " id="navbarNavDropdown">
+    
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0" >
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Tipos de Apartamentos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="tipos_de_apto.html">Tipos de apartamentos</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="https://app.lapentor.com/sphere/apto-tipo-1" target="_blank">Apartamento tipo 1</a></li>
+                                <li><a class="dropdown-item" href="https://app.lapentor.com/sphere/apto-tipo-2" target="_blank">Apartamento tipo 2</a></li>
+                                <li><a class="dropdown-item" href="https://app.lapentor.com/sphere/apto-tipo-2a" target="_blank">Apartamento tipo 2a</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="compra.html">Compra con nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="noticias.html">Noticias</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     <a href="https://wa.me/573123456789" target="_blank" class="whatsapp-button">
         <i class="fab fa-whatsapp"></i>
     </a>
@@ -250,7 +126,53 @@
                 </div>
             </div>
         </div>
+        <footer class="bg-dark text-white pt-4 px-2"> 
+            <div class="container-fluid"> 
+                <div class="row justify-content-center"> 
+                    <div class="col-12 col-md-4 col-lg-3 mb-4"> 
+                        <h5 class="text-center text-md-start">About Us</h5>
+                        <ul class="list-unstyled text-center text-md-start">
+                            <li><a href="#" class="text-white text-decoration-none">UT Amali</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Conjunto residencial Amali</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">EDOS Pereira</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 mb-4">
+                        <h5 class="text-center text-md-start">Services</h5>
+                        <ul class="list-unstyled text-center text-md-start">
+                            <li><a href="#" class="text-white text-decoration-none">Web Development</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">SEO</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Marketing</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 mb-4">
+                        <h5 class="text-center text-md-start">Contact</h5>
+                        <div class="text-center text-md-start">
+                            <p class="text-white mb-1">Dos Quebradas</p>
+                            <p class="text-white mb-1">Email: UTamali@hotmail.com</p>
+                            <p class="text-white mb-1">Phone: +57 234 567 890</p>
+                        </div>
     
+                        <div class="mt-3 d-flex justify-content-center justify-content-md-start">
+                            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-12 text-center pt-3 border-top">
+                        <img src="Material Publicidad/LOGOS/LOGO.png" 
+                             class="img-fluid" 
+                             style="max-width: 250px; width: 100%" 
+                             alt="Logo">
+                        <p class="mb-0 mt-2">&copy; 2025 Juan Jose Aguirre. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
